@@ -11,7 +11,7 @@ export default async function Home() {
       <section className="bg-gradient-to-br from-uba-blue to-uba-darkBlue text-white py-16 md:py-24 px-4">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl md:text-5xl font-bold mb-8 leading-tight">
-            Olá, o que você precisa resolver em <span className="text-uba-red">Ubá</span> hoje?
+            O que você precisa resolver em Ubá?
           </h2>
           
           <div className="relative max-w-2xl mx-auto">

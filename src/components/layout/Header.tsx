@@ -19,15 +19,15 @@ export function Header() {
       <div className="container mx-auto px-4 md:px-8 py-4 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-white rounded p-1">
-          <div className="relative w-12 h-12 md:w-14 md:h-14 flex-shrink-0 bg-white rounded-full overflow-hidden border-2 border-uba-red">
+          <div className="relative w-12 h-12 md:w-14 md:h-14 flex-shrink-0 bg-white rounded-full overflow-hidden border-2 border-uba-red logo-container">
             <Image
-                src="/assets/Brasao_Uba.jpg" // Caminho relativo à pasta 'public'
-                alt="Brasão da Prefeitura Municipal de Ubá"
-                fill
-                className="object-contain p-1"
-                priority // Carrega com prioridade (LCP)
+              src="/assets/Brasao_Uba.jpg"
+              alt="Brasão da Prefeitura Municipal de Ubá"
+              fill
+              className="object-contain p-1"
+              priority
             />
-        </div>
+          </div>
           <div className="leading-tight">
             <h1 className="font-bold text-xl md:text-2xl tracking-tight">Prefeitura de Ubá</h1>
             <p className="text-xs md:text-sm text-blue-100 font-medium">Governo Municipal Transparente</p>
@@ -54,7 +54,7 @@ export function Header() {
             className="bg-uba-red hover:bg-uba-darkRed text-white px-5 py-2.5 rounded-md font-bold text-base flex items-center gap-2 shadow-md transition-all hover:scale-105 focus:outline-none focus:ring-4 focus:ring-uba-red/50"
             aria-label="Acessar serviços com conta Gov.br"
           >
-            <span className="bg-white text-uba-blue w-6 h-6 rounded-full flex items-center justify-center text-xs font-black">br</span>
+            <span className="bg-white text-uba-blue w-6 h-6 rounded-full flex items-center justify-center text-xs font-black govbr-icon">br</span>
             Entrar com Gov.br
           </a>
           

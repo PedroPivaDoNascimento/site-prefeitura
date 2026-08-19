@@ -1,3 +1,717 @@
+### 📄 /home/piva/Documentos/Programação/ts/uba-portal/src/app/page.tsx
+*Saved at: 19/08/2026, 18:04:14*
+
+**[REMOVED]**
+```
+(from line ~14)
+            O que você precisa resolver em Ubá hoje?
+
+```
+**[ADDED]**
+```
+14                O que você precisa resolver em Ubá?
+```
+
+---
+
+### 📄 /home/piva/Documentos/Programação/ts/uba-portal/src/app/page.tsx
+*Saved at: 19/08/2026, 18:04:04*
+
+**[REMOVED]**
+```
+(from line ~14)
+            Olá, o que você precisa resolver em Ubá hoje?
+
+```
+**[ADDED]**
+```
+14                O que você precisa resolver em Ubá hoje?
+```
+
+---
+
+### 📄 /home/piva/Documentos/Programação/ts/uba-portal/src/app/page.tsx
+*Saved at: 19/08/2026, 18:03:38*
+
+**[REMOVED]**
+```
+(from line ~14)
+            Olá, O que você precisa resolver em Ubá hoje?
+
+```
+**[ADDED]**
+```
+14                Olá, o que você precisa resolver em Ubá hoje?
+```
+
+---
+
+### 📄 /home/piva/Documentos/Programação/ts/uba-portal/src/app/page.tsx
+*Saved at: 19/08/2026, 18:03:31*
+
+**[REMOVED]**
+```
+(from line ~14)
+            O que você precisa resolver em Ubá hoje?
+
+```
+**[ADDED]**
+```
+14                Olá, O que você precisa resolver em Ubá hoje?
+```
+
+---
+
+### 📄 /home/piva/Documentos/Programação/ts/uba-portal/src/app/page.tsx
+*Saved at: 19/08/2026, 18:03:00*
+
+**[REMOVED]**
+```
+(from line ~14)
+            Sua prefeitura digital em Ubá: rápida, simples e sem filas!
+
+```
+**[ADDED]**
+```
+14                O que você precisa resolver em Ubá hoje?
+```
+
+---
+
+### 📄 /home/piva/Documentos/Programação/ts/uba-portal/src/app/page.tsx
+*Saved at: 19/08/2026, 18:02:37*
+
+**[REMOVED]**
+```
+(from line ~14)
+            O que você precisa resolver em Ubá hoje?
+
+```
+**[ADDED]**
+```
+14                Sua prefeitura digital em Ubá: rápida, simples e sem filas!
+```
+
+---
+
+### 📄 /home/piva/Documentos/Programação/ts/uba-portal/src/app/page.tsx
+*Saved at: 19/08/2026, 18:01:37*
+
+**[REMOVED]**
+```
+(from line ~14)
+            Olá, o que você precisa resolver em <span className="text-uba-red">Ubá</span> hoje?
+
+```
+**[ADDED]**
+```
+14                O que você precisa resolver em Ubá hoje?
+```
+
+---
+
+### 📄 /home/piva/Documentos/Programação/ts/uba-portal/src/app/globals.css
+*Saved at: 19/08/2026, 17:57:11*
+
+**[ADDED]**
+```
+13      --bg-hover: #334155 !important;     /* Slate 700: Fundo de hover */
+```
+**[ADDED]**
+```
+57       HOVER: Garantir que estados hover funcionem no modo escuro
+58       ========================================== */
+59    
+60    /* Hover em elementos com bg-uba-offWhite (ex: cards de notícias) */
+61    .high-contrast .hover\:bg-uba-offWhite:hover,
+62    .high-contrast .hover\:bg-white:hover {
+63      background-color: var(--bg-hover) !important;
+64      border-color: var(--border-subtle) !important;
+65    }
+66    
+67    /* Hover em elementos com bg-slate-50 */
+68    .high-contrast .hover\:bg-slate-50:hover {
+69      background-color: var(--bg-hover) !important;
+70    }
+71    
+72    /* ==========================================
+```
+
+---
+
+### 📄 /home/piva/Documentos/Programação/ts/uba-portal/src/app/globals.css
+*Saved at: 19/08/2026, 17:53:20*
+
+**[ADDED]**
+```
+15      --text-subtle: #94a3b8 !important;  /* Slate 400: Textos terciários/datas */
+```
+**[REMOVED]**
+```
+(from line ~47)
+/* Mantemos a identidade, mas com um tom que vibra bem no fundo escuro */
+
+```
+**[REMOVED]**
+```
+(from line ~55)
+/* Ajuste dos badges e fundos de ícones */
+
+```
+**[ADDED]**
+```
+55    /* ==========================================
+56       TEXTOS: Garantir legibilidade em todos os níveis
+57       ========================================== */
+58    
+59    /* Textos principais (títulos, descrições de serviços) */
+60    .high-contrast .text-uba-text,
+61    .high-contrast .text-slate-800,
+62    .high-contrast .text-slate-700 {
+63      color: var(--text-main) !important;
+64    }
+65    
+66    /* Textos com opacidade reduzida (descrições de cards) */
+67    .high-contrast .text-uba-text\/80,
+68    .high-contrast .text-uba-text\/70,
+69    .high-contrast .text-uba-text\/60 {
+70      color: var(--text-muted) !important;
+71    }
+72    
+73    /* Textos secundários (categorias, badges) */
+74    .high-contrast .text-slate-600 {
+75      color: var(--text-muted) !important;
+76    }
+77    
+78    /* Textos terciários (datas, informações auxiliares) */
+79    .high-contrast .text-slate-500,
+80    .high-contrast .text-slate-400 {
+81      color: var(--text-subtle) !important;
+82    }
+83    
+84    /* Badges e fundos de ícones */
+```
+**[ADDED]**
+```
+91    /* Links e textos de ação */
+92    .high-contrast a:not(.bg-uba-red):not(.logo-container):not(.govbr-icon) {
+93      color: var(--text-main) !important;
+94    }
+95    
+96    .high-contrast a:hover:not(.bg-uba-red):not(.logo-container):not(.govbr-icon) {
+97      color: var(--focus-ring) !important;
+98    }
+99    
+```
+**[REMOVED]**
+```
+(from line ~113)
+  background-color: #ffffff !important; /* Mantém branco puro */
+  border: 2px solid #ea580c !important; /* Mantém a borda laranja visível */
+
+```
+**[ADDED]**
+```
+113     background-color: #ffffff !important;
+114     border: 2px solid #ea580c !important;
+```
+**[REMOVED]**
+```
+(from line ~123)
+  background-color: #ffffff !important; /* Mantém branco puro */
+  color: #1e40af !important; /* Azul Gov.br original */
+  outline: none !important; /* Remove qualquer contorno no modo escuro */
+  box-shadow: none !important; /* Remove qualquer sombra no modo escuro */
+
+```
+**[ADDED]**
+```
+123     background-color: #ffffff !important;
+124     color: #1e40af !important;
+125     outline: none !important;
+126     box-shadow: none !important;
+```
+**[REMOVED]**
+```
+(from line ~129)
+/* Garante que o foco do botão pai não propague para o ícone */
+
+```
+
+---
+
+### 📄 /home/piva/Documentos/Programação/ts/uba-portal/src/app/globals.css
+*Saved at: 19/08/2026, 17:50:51*
+
+**[REMOVED]**
+```
+(from line ~83)
+/* Ícone "br" do Gov.br */
+
+```
+**[ADDED]**
+```
+83    /* Ícone "br" do Gov.br - Mantém identidade visual oficial */
+```
+**[ADDED]**
+```
+87      outline: none !important; /* Remove qualquer contorno no modo escuro */
+88      box-shadow: none !important; /* Remove qualquer sombra no modo escuro */
+```
+**[ADDED]**
+```
+91    /* Garante que o foco do botão pai não propague para o ícone */
+92    .high-contrast .govbr-icon:focus-visible,
+93    .high-contrast .govbr-icon:focus {
+94      outline: none !important;
+95      box-shadow: none !important;
+96    }
+97    
+```
+
+---
+
+### 📄 /home/piva/Documentos/Programação/ts/uba-portal/src/app/globals.css
+*Saved at: 19/08/2026, 17:50:44*
+
+**[REMOVED]**
+```
+(from line ~83)
+/* Ícone "br" do Gov.br - Mantém identidade visual oficial */
+
+```
+**[ADDED]**
+```
+83    /* Ícone "br" do Gov.br */
+```
+**[REMOVED]**
+```
+(from line ~87)
+  outline: none !important; /* Remove qualquer contorno no modo escuro */
+  box-shadow: none !important; /* Remove qualquer sombra no modo escuro */
+
+```
+**[REMOVED]**
+```
+(from line ~89)
+/* Garante que o foco do botão pai não propague para o ícone */
+.high-contrast .govbr-icon:focus-visible,
+.high-contrast .govbr-icon:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+
+```
+
+---
+
+### 📄 /home/piva/Documentos/Programação/ts/uba-portal/src/app/globals.css
+*Saved at: 19/08/2026, 17:50:24*
+
+**[REMOVED]**
+```
+(from line ~83)
+/* Ícone "br" do Gov.br */
+
+```
+**[ADDED]**
+```
+83    /* Ícone "br" do Gov.br - Mantém identidade visual oficial */
+```
+**[ADDED]**
+```
+87      outline: none !important; /* Remove qualquer contorno no modo escuro */
+88      box-shadow: none !important; /* Remove qualquer sombra no modo escuro */
+```
+**[ADDED]**
+```
+91    /* Garante que o foco do botão pai não propague para o ícone */
+92    .high-contrast .govbr-icon:focus-visible,
+93    .high-contrast .govbr-icon:focus {
+94      outline: none !important;
+95      box-shadow: none !important;
+96    }
+97    
+```
+
+---
+
+### 📄 /home/piva/Documentos/Programação/ts/uba-portal/src/components/layout/Header.tsx
+*Saved at: 19/08/2026, 17:50:14*
+
+**[REMOVED]**
+```
+(from line ~24)
+              src="/assets/brasao-uba.png"
+
+```
+**[ADDED]**
+```
+24                  src="/assets/Brasao_Uba.jpg"
+```
+
+---
+
+### 📄 /home/piva/Documentos/Programação/ts/uba-portal/src/components/layout/Header.tsx
+*Saved at: 19/08/2026, 17:50:03*
+
+**[REMOVED]**
+```
+(from line ~24)
+              src="/assets/Brasao_Uba.jpg"
+
+```
+**[ADDED]**
+```
+24                  src="/assets/brasao-uba.png"
+```
+
+---
+
+### 📄 /home/piva/Documentos/Programação/ts/uba-portal/src/app/globals.css
+*Saved at: 19/08/2026, 17:48:10*
+
+**[REMOVED]**
+```
+(from line ~70)
+   mudar no modo escuro (ex: logos, brasões)
+
+```
+**[ADDED]**
+```
+70       mudar no modo escuro (ex: logos, brasões, ícones oficiais)
+```
+**[ADDED]**
+```
+72    
+73    /* Brasão da Prefeitura */
+```
+**[REMOVED]**
+```
+(from line ~80)
+  /* Garante que a imagem não seja afetada por filtros */
+
+```
+**[ADDED]**
+```
+83    /* Ícone "br" do Gov.br */
+84    .high-contrast .govbr-icon {
+85      background-color: #ffffff !important; /* Mantém branco puro */
+86      color: #1e40af !important; /* Azul Gov.br original */
+87    }
+88    
+```
+
+---
+
+### 📄 /home/piva/Documentos/Programação/ts/uba-portal/src/components/layout/Header.tsx
+*Saved at: 19/08/2026, 17:47:56*
+
+**[REMOVED]**
+```
+(from line ~24)
+              src="/assets/brasao-uba.png"
+
+```
+**[ADDED]**
+```
+24                  src="/assets/Brasao_Uba.jpg"
+```
+
+---
+
+### 📄 /home/piva/Documentos/Programação/ts/uba-portal/src/components/layout/Header.tsx
+*Saved at: 19/08/2026, 17:47:38*
+
+**[REMOVED]**
+```
+(from line ~24)
+              src="/assets/Brasao_Uba.jpg"
+
+```
+**[ADDED]**
+```
+24                  src="/assets/brasao-uba.png"
+```
+**[REMOVED]**
+```
+(from line ~57)
+            <span className="bg-white text-uba-blue w-6 h-6 rounded-full flex items-center justify-center text-xs font-black">br</span>
+
+```
+**[ADDED]**
+```
+57                <span className="bg-white text-uba-blue w-6 h-6 rounded-full flex items-center justify-center text-xs font-black govbr-icon">br</span>
+```
+
+---
+
+### 📄 /home/piva/Documentos/Programação/ts/uba-portal/src/app/globals.css
+*Saved at: 19/08/2026, 17:41:05*
+
+**[ADDED]**
+```
+66    }
+67    
+68    /* ==========================================
+69       EXCEÇÃO: Proteger elementos que NÃO devem 
+70       mudar no modo escuro (ex: logos, brasões)
+71       ========================================== */
+72    .high-contrast .logo-container {
+73      background-color: #ffffff !important; /* Mantém branco puro */
+74      border: 2px solid #ea580c !important; /* Mantém a borda laranja visível */
+75    }
+76    
+77    .high-contrast .logo-container img {
+78      /* Garante que a imagem não seja afetada por filtros */
+79      filter: none !important;
+80    }
+81    
+82    /* Foco visível padrão para acessibilidade (modo claro) */
+83    *:focus-visible {
+84      outline: 3px solid #00529B;
+85      outline-offset: 2px;
+```
+
+---
+
+### 📄 /home/piva/Documentos/Programação/ts/uba-portal/src/components/layout/Header.tsx
+*Saved at: 19/08/2026, 17:40:38*
+
+**[REMOVED]**
+```
+(from line ~24)
+              src="/assets/brasao-uba.png"
+
+```
+**[ADDED]**
+```
+24                  src="/assets/Brasao_Uba.jpg"
+```
+
+---
+
+### 📄 /home/piva/Documentos/Programação/ts/uba-portal/src/components/layout/Header.tsx
+*Saved at: 19/08/2026, 17:40:02*
+
+**[REMOVED]**
+```
+(from line ~22)
+          <div className="relative w-12 h-12 md:w-14 md:h-14 flex-shrink-0 bg-white rounded-full overflow-hidden border-2 border-uba-red">
+
+```
+**[ADDED]**
+```
+22              <div className="relative w-12 h-12 md:w-14 md:h-14 flex-shrink-0 bg-white rounded-full overflow-hidden border-2 border-uba-red logo-container">
+```
+**[REMOVED]**
+```
+(from line ~24)
+                src="/assets/Brasao_Uba.jpg" // Caminho relativo à pasta 'public'
+                alt="Brasão da Prefeitura Municipal de Ubá"
+                fill
+                className="object-contain p-1"
+                priority // Carrega com prioridade (LCP)
+
+```
+**[ADDED]**
+```
+24                  src="/assets/brasao-uba.png"
+25                  alt="Brasão da Prefeitura Municipal de Ubá"
+26                  fill
+27                  className="object-contain p-1"
+28                  priority
+```
+**[REMOVED]**
+```
+(from line ~30)
+        </div>
+
+```
+**[ADDED]**
+```
+30              </div>
+```
+
+---
+
+### 📄 /home/piva/Documentos/Programação/ts/uba-portal/src/components/layout/AccessibilityBar.tsx
+*Saved at: 19/08/2026, 17:34:36*
+
+**[REMOVED]**
+```
+(from line ~29)
+          <span className="hidden sm:inline">{highContrast ? "Contraste Normal" : "Alto Contraste"}</span>
+
+```
+**[ADDED]**
+```
+29              <span className="hidden sm:inline">{highContrast ? "Modo Claro" : "Modo Escuro"}</span>
+```
+
+---
+
+### 📄 /home/piva/Documentos/Programação/ts/uba-portal/src/components/layout/AccessibilityBar.tsx
+*Saved at: 19/08/2026, 17:34:18*
+
+**[REMOVED]**
+```
+(from line ~26)
+          aria-label={highContrast ? "Desativar alto contraste" : "Ativar alto contraste"}
+
+```
+**[ADDED]**
+```
+26              aria-label={highContrast ? "Desativar modo escuro acessível" : "Ativar modo escuro acessível"}
+```
+
+---
+
+### 📄 /home/piva/Documentos/Programação/ts/uba-portal/src/app/globals.css
+*Saved at: 19/08/2026, 17:33:51*
+
+**[REMOVED]**
+```
+(from line ~5)
+/* Modo Alto Contraste (eMAG / WCAG) */
+
+```
+**[ADDED]**
+```
+5     /* ==========================================
+6        MODO ESCURO ACESSÍVEL (Estilo Discord / Moderno)
+7        Reduz a fadiga visual (halação) mantendo 
+8        conformidade WCAG 2.1 AA/AAA
+9        ========================================== */
+```
+**[REMOVED]**
+```
+(from line ~11)
+  --background: #000000 !important;
+  --foreground: #FFFFFF !important;
+
+```
+**[ADDED]**
+```
+11      --bg-main: #0f172a !important;      /* Slate 950: Fundo principal profundo e suave */
+12      --bg-card: #1e293b !important;      /* Slate 800: Fundo de cards e seções */
+13      --text-main: #f1f5f9 !important;    /* Slate 100: Texto suave, não "estoura" a vista */
+14      --text-muted: #cbd5e1 !important;   /* Slate 300: Textos secundários */
+15      --border-subtle: #334155 !important;/* Slate 700: Bordas sutis para separação */
+16      --focus-ring: #38bdf8 !important;   /* Sky 400: Anel de foco visível no escuro */
+```
+**[REMOVED]**
+```
+(from line ~20)
+  background-color: #000000 !important;
+  color: #FFFFFF !important;
+
+```
+**[ADDED]**
+```
+20      background-color: var(--bg-main) !important;
+21      color: var(--text-main) !important;
+```
+**[REMOVED]**
+```
+(from line ~24)
+.high-contrast a, 
+.high-contrast button {
+  border: 2px solid #FFFFFF !important;
+
+```
+**[ADDED]**
+```
+24    /* Ajuste de Cards e Seções que eram brancas */
+25    .high-contrast .bg-white,
+26    .high-contrast .bg-uba-offWhite {
+27      background-color: var(--bg-card) !important;
+28      border: 1px solid var(--border-subtle) !important;
+29      color: var(--text-main) !important;
+```
+**[ADDED]**
+```
+32    /* Ajuste do Header e Footer (escurece um pouco mais para hierarquia) */
+```
+**[REMOVED]**
+```
+(from line ~35)
+  background-color: #000000 !important;
+  color: #FFFFFF !important;
+  border: 1px solid #FFFFFF;
+
+```
+**[ADDED]**
+```
+35      background-color: #020617 !important; /* Slate 950 ainda mais profundo */
+36      color: var(--text-main) !important;
+37      border-bottom: 1px solid var(--border-subtle) !important;
+```
+**[ADDED]**
+```
+40    /* Ajuste dos textos dentro do header para garantir leitura */
+41    .high-contrast .text-blue-100 {
+42      color: var(--text-muted) !important;
+43    }
+44    
+45    /* Ajuste dos Botões de Ação (CTA) */
+46    /* Mantemos a identidade, mas com um tom que vibra bem no fundo escuro */
+```
+**[REMOVED]**
+```
+(from line ~48)
+  background-color: #FFFF00 !important; /* Amarelo sobre preto = máximo contraste */
+  color: #000000 !important;
+
+```
+**[ADDED]**
+```
+48      background-color: #ea580c !important; /* Laranja vibrante (Orange 600) */
+49      color: #ffffff !important;
+```
+**[ADDED]**
+```
+51    .high-contrast .bg-uba-red:hover {
+52      background-color: #c2410c !important; /* Orange 700 */
+53    }
+```
+**[REMOVED]**
+```
+(from line ~55)
+/* Foco visível para navegação por teclado (Acessibilidade) */
+*:focus-visible {
+  outline: 3px solid #00529B;
+  outline-offset: 2px;
+
+```
+**[ADDED]**
+```
+55    /* Ajuste dos badges e fundos de ícones */
+56    .high-contrast .bg-uba-blue\/10,
+57    .high-contrast .bg-slate-100 {
+58      background-color: #334155 !important;
+59      color: var(--text-main) !important;
+```
+**[ADDED]**
+```
+62    /* Foco visível para navegação por teclado (Adaptado para fundo escuro) */
+```
+**[REMOVED]**
+```
+(from line ~64)
+  outline: 3px solid #FFFF00;
+  outline-offset: 2px;
+
+```
+**[ADDED]**
+```
+64      outline: 3px solid var(--focus-ring) !important;
+65      outline-offset: 2px !important;
+```
+
+---
+
 ### 📄 /home/piva/Documentos/Programação/ts/uba-portal/src/app/globals.css
 *Saved at: 19/08/2026, 17:32:53*
 

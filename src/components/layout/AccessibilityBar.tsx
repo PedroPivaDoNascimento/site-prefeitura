@@ -23,10 +23,10 @@ export function AccessibilityBar() {
         <button 
           onClick={toggleContrast}
           className="flex items-center gap-2 hover:bg-white/10 px-3 py-1 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-white"
-          aria-label={highContrast ? "Desativar alto contraste" : "Ativar alto contraste"}
+          aria-label={highContrast ? "Desativar modo escuro acessível" : "Ativar modo escuro acessível"}
         >
           {highContrast ? <Sun size={16} /> : <Moon size={16} />}
-          <span className="hidden sm:inline">{highContrast ? "Contraste Normal" : "Alto Contraste"}</span>
+          <span className="hidden sm:inline">{highContrast ? "Modo Claro" : "Modo Escuro"}</span>
         </button>
         
         <div className="flex items-center gap-1 border-l border-blue-700 pl-4">

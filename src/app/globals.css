@@ -2,41 +2,155 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Modo Alto Contraste (eMAG / WCAG) */
+/* ==========================================
+   MODO ESCURO ACESSÍVEL (Estilo Discord / Moderno)
+   Reduz a fadiga visual (halação) mantendo 
+   conformidade WCAG 2.1 AA/AAA
+   ========================================== */
 .high-contrast {
-  --background: #000000 !important;
-  --foreground: #FFFFFF !important;
+  --bg-main: #0f172a !important;      /* Slate 950: Fundo principal profundo e suave */
+  --bg-card: #1e293b !important;      /* Slate 800: Fundo de cards e seções */
+  --bg-hover: #334155 !important;     /* Slate 700: Fundo de hover */
+  --text-main: #f1f5f9 !important;    /* Slate 100: Texto suave, não "estoura" a vista */
+  --text-muted: #cbd5e1 !important;   /* Slate 300: Textos secundários */
+  --text-subtle: #94a3b8 !important;  /* Slate 400: Textos terciários/datas */
+  --border-subtle: #334155 !important;/* Slate 700: Bordas sutis para separação */
+  --focus-ring: #38bdf8 !important;   /* Sky 400: Anel de foco visível no escuro */
 }
 
 .high-contrast body {
-  background-color: #000000 !important;
-  color: #FFFFFF !important;
+  background-color: var(--bg-main) !important;
+  color: var(--text-main) !important;
 }
 
-.high-contrast a, 
-.high-contrast button {
-  border: 2px solid #FFFFFF !important;
+/* Ajuste de Cards e Seções que eram brancas */
+.high-contrast .bg-white,
+.high-contrast .bg-uba-offWhite {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-subtle) !important;
+  color: var(--text-main) !important;
 }
 
+/* Ajuste do Header e Footer (escurece um pouco mais para hierarquia) */
 .high-contrast .bg-uba-blue,
 .high-contrast .bg-uba-darkBlue {
-  background-color: #000000 !important;
-  color: #FFFFFF !important;
-  border: 1px solid #FFFFFF;
+  background-color: #020617 !important; /* Slate 950 ainda mais profundo */
+  color: var(--text-main) !important;
+  border-bottom: 1px solid var(--border-subtle) !important;
 }
 
+/* Ajuste dos textos dentro do header para garantir leitura */
+.high-contrast .text-blue-100 {
+  color: var(--text-muted) !important;
+}
+
+/* Ajuste dos Botões de Ação (CTA) */
 .high-contrast .bg-uba-red {
-  background-color: #FFFF00 !important; /* Amarelo sobre preto = máximo contraste */
-  color: #000000 !important;
+  background-color: #ea580c !important; /* Laranja vibrante (Orange 600) */
+  color: #ffffff !important;
+}
+.high-contrast .bg-uba-red:hover {
+  background-color: #c2410c !important; /* Orange 700 */
 }
 
-/* Foco visível para navegação por teclado (Acessibilidade) */
+/* ==========================================
+   HOVER: Garantir que estados hover funcionem no modo escuro
+   ========================================== */
+
+/* Hover em elementos com bg-uba-offWhite (ex: cards de notícias) */
+.high-contrast .hover\:bg-uba-offWhite:hover,
+.high-contrast .hover\:bg-white:hover {
+  background-color: var(--bg-hover) !important;
+  border-color: var(--border-subtle) !important;
+}
+
+/* Hover em elementos com bg-slate-50 */
+.high-contrast .hover\:bg-slate-50:hover {
+  background-color: var(--bg-hover) !important;
+}
+
+/* ==========================================
+   TEXTOS: Garantir legibilidade em todos os níveis
+   ========================================== */
+
+/* Textos principais (títulos, descrições de serviços) */
+.high-contrast .text-uba-text,
+.high-contrast .text-slate-800,
+.high-contrast .text-slate-700 {
+  color: var(--text-main) !important;
+}
+
+/* Textos com opacidade reduzida (descrições de cards) */
+.high-contrast .text-uba-text\/80,
+.high-contrast .text-uba-text\/70,
+.high-contrast .text-uba-text\/60 {
+  color: var(--text-muted) !important;
+}
+
+/* Textos secundários (categorias, badges) */
+.high-contrast .text-slate-600 {
+  color: var(--text-muted) !important;
+}
+
+/* Textos terciários (datas, informações auxiliares) */
+.high-contrast .text-slate-500,
+.high-contrast .text-slate-400 {
+  color: var(--text-subtle) !important;
+}
+
+/* Badges e fundos de ícones */
+.high-contrast .bg-uba-blue\/10,
+.high-contrast .bg-slate-100 {
+  background-color: #334155 !important;
+  color: var(--text-main) !important;
+}
+
+/* Links e textos de ação */
+.high-contrast a:not(.bg-uba-red):not(.logo-container):not(.govbr-icon) {
+  color: var(--text-main) !important;
+}
+
+.high-contrast a:hover:not(.bg-uba-red):not(.logo-container):not(.govbr-icon) {
+  color: var(--focus-ring) !important;
+}
+
+/* Foco visível para navegação por teclado (Adaptado para fundo escuro) */
+.high-contrast *:focus-visible {
+  outline: 3px solid var(--focus-ring) !important;
+  outline-offset: 2px !important;
+}
+
+/* ==========================================
+   EXCEÇÃO: Proteger elementos que NÃO devem 
+   mudar no modo escuro (ex: logos, brasões, ícones oficiais)
+   ========================================== */
+
+/* Brasão da Prefeitura */
+.high-contrast .logo-container {
+  background-color: #ffffff !important;
+  border: 2px solid #ea580c !important;
+}
+
+.high-contrast .logo-container img {
+  filter: none !important;
+}
+
+/* Ícone "br" do Gov.br - Mantém identidade visual oficial */
+.high-contrast .govbr-icon {
+  background-color: #ffffff !important;
+  color: #1e40af !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.high-contrast .govbr-icon:focus-visible,
+.high-contrast .govbr-icon:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Foco visível padrão para acessibilidade (modo claro) */
 *:focus-visible {
   outline: 3px solid #00529B;
-  outline-offset: 2px;
-}
-
-.high-contrast *:focus-visible {
-  outline: 3px solid #FFFF00;
   outline-offset: 2px;
 }
