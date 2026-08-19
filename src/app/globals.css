@@ -26,11 +26,11 @@
 }
 
 .high-contrast .bg-uba-red {
-  background-color: #FFFF00 !important;
+  background-color: #FFFF00 !important; /* Amarelo sobre preto = máximo contraste */
   color: #000000 !important;
 }
 
-/* Foco visível para acessibilidade */
+/* Foco visível para navegação por teclado (Acessibilidade) */
 *:focus-visible {
   outline: 3px solid #00529B;
   outline-offset: 2px;
