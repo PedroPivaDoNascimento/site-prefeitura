@@ -1,26 +1,42 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Modo Alto Contraste (eMAG / WCAG) */
+.high-contrast {
+  --background: #000000 !important;
+  --foreground: #FFFFFF !important;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.high-contrast body {
+  background-color: #000000 !important;
+  color: #FFFFFF !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.high-contrast a, 
+.high-contrast button {
+  border: 2px solid #FFFFFF !important;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.high-contrast .bg-uba-blue,
+.high-contrast .bg-uba-darkBlue {
+  background-color: #000000 !important;
+  color: #FFFFFF !important;
+  border: 1px solid #FFFFFF;
+}
+
+.high-contrast .bg-uba-red {
+  background-color: #FFFF00 !important;
+  color: #000000 !important;
+}
+
+/* Foco visível para acessibilidade */
+*:focus-visible {
+  outline: 3px solid #00529B;
+  outline-offset: 2px;
+}
+
+.high-contrast *:focus-visible {
+  outline: 3px solid #FFFF00;
+  outline-offset: 2px;
 }
